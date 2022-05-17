@@ -81,6 +81,9 @@ function showPhoneErrow() {
 
 document.forms.formName.onsubmit = async (e) => {
   e.preventDefault();
+
+  ym(88814819, "reachGoal", "form");
+
   if (!inputName.value || !inputPhone.value || !validPhone) {
     if (!inputName.value) {
       showNameErrow();
