@@ -4,7 +4,6 @@ const mailer = require("./nodemailer");
 
 const app = express();
 
-const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -32,4 +31,4 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(PORT, () => console.log(`server listening ...`));
+app.listen(process.env.PORT || 3001, () => console.log(`server listening ...`));
