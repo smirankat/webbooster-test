@@ -104,7 +104,7 @@ document.forms.formName.onsubmit = async (e) => {
       productName: productName,
     });
 
-    let response = await fetch("http://localhost:3001", {
+    let response = await fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
