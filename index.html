@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="shortcut icon" icon” href="#" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <img src="/public/img/apple.jpg" alt="apple image" />
+        <div class="product_card">Apple</div>
+        <button class="add">ADD</button>
+      </div>
+      <div class="card">
+        <img src="/public/img/avocado.jpg" alt="avocado image" />
+        <div class="product_card">Avocado</div>
+        <button class="add">ADD</button>
+      </div>
+      <div class="card">
+        <img src="/public/img/papaya.jpg" alt="papaya image" />
+        <div class="product_card">Papaya</div>
+        <button class="add">ADD</button>
+      </div>
+      <div class="card">
+        <img src="/public/img/pineapple.jpg" alt="pineapple image" />
+        <div class="product_card">Pineapple</div>
+        <button class="add">ADD</button>
+      </div>
+    </div>
+
+    <div id="formModal" class="modal">
+      <form id="formElem" name="formName" method="post" novalidate>
+        <span class="close">&times;</span>
+        <ul>
+          <li>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="user_name" />
+            <span class="error" aria-live="polite"></span>
+          </li>
+          <li>
+            <label for="phone">Your phone number:</label>
+            <input type="tel" id="phone" name="user_phone" />
+            <span class="error" aria-live="polite"></span>
+          </li>
+          <li>
+            <label for="product_form">Product name:</label>
+            <textarea id="product_form" name="product_name"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Add to your cart</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <script src="/public//script.js"></script>
+  </body>
+</html>
