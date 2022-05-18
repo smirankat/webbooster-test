@@ -1,8 +1,10 @@
+body {
+  background: hsl(0, 40%, 90%);
+}
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: hsl(0, 40%, 90%);
   padding-top: 30px;
 }
 .card {

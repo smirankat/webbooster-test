@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/public", express.static(__dirname + "/public"));
 app.post("/", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   res.json(req.body);
   const message = {
     to: "test@mailer.ru",
@@ -31,4 +31,6 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(process.env.PORT || 3001, () => console.log(`server listening ...`));
+app.listen(process.env.PORT || 3001, () =>
+  console.log(`server listening at http://localhost:3001`)
+);
